@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us Form</title>
+    <!-- this link is for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- this link is for css -->
+    <link rel="stylesheet" type="text/css" href="webpage2.1.css">
+ </head>
+ <body>
+    <div class="box">
+        <div class="content">
+          <div class="left-sidde">
+            <div class="address details">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="topic">Address</div>
+                <div class="text-one">Khushi,mp12</div>
+                <div class="text-two">vijaynagar 06</div>
+            </div>
+            <div class="phone details">
+                <i class="fa-solid fa-phone"></i>
+                <div class="topic">Phone</div>
+                <div class="text-one">+0098 9893 5647</div>
+                <div class="text-two">+0096 3434 5678</div>
+            </div>
+            <div class="email details">
+                <i class="fa-solid fa-envelope"></i>
+                <div class="topic">Email</div>
+                <div class="text-one">singaji@gmail.com</div>
+                <div class="text-two">info.singaji@gmail.com</div>
+            </div>
+          </div>
+          <div class="right-side">
+              <div class="topic-text">Send us a message</div>
+              <p>If you have any work for me or any types of queries related to my tutorial, you can send me a message from here. It's my pleasure to help you.</p>
+              <form action="#" id="myForm">
+                  <div class="input-box">
+                      <input type="text" id="name-input-box" placeholder="Enter your name" required>
+                  </div>
+                  <div class="input-box email">
+                      <input type="text" id="email-input-box" placeholder="Enter your email" required>
+                  </div>
+                  <div class="message-box">
+                      <textarea id="message-box" placeholder="Enter your message" required></textarea>
+                  </div>
+                  <div class="button">
+                      <input type="button" onclick="validateAndSubmit()" value="Send Now">
+                  </div>
+              </form>
+              <br><br><br>
+              <hr>
+          </div>
+        </div>
+    </div>
+    <p><a href="webpage2.2.html"></a></p>
+
+    <script>
+        function validateAndSubmit() {
+            const nameInput = document.getElementById("name-input-box");
+            const emailInput = document.getElementById("email-input-box");
+            const messageInput = document.getElementById("message-box");
+            const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+            if (nameInput.value.trim() === "" || messageInput.value.trim() === "") {
+                alert("Name and Message fields cannot be empty");
+            }
+             else if (!emailRegex.test(emailInput.value.trim())) {
+                alert("Invalid email address. Please enter a valid email address.");
+            } else {
+                // All input fields are filled and valid, navigate to the next page
+                window.location.href = "webpage2.2.html";
+            }
+        }
+    </script>
+</body>
+</html>
+

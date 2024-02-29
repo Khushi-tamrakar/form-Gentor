@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="second.css">
+</head>
+<body>
+    <form id="myForm">
+    <div class="container">
+
+<div class="form ">
+    <div class="details address">
+        <span class="title">Address Details</span>
+        <div class="fields">
+            <div class="input-field">
+                <label>Address Type</label><br>
+                <input type="text" placeholder="Enter address type" required>
+            </div>
+            <div class="input-field">
+                <label>Nationality</label><br>
+                <input type="text" placeholder="Enter Nationality" required>
+            </div>
+            <div class="input-field">
+                <label>State</label><br>
+                <input type="text" placeholder="Enter your State" required>
+            </div>
+            <div class="input-field">
+                <label>District</label><br>
+                <input type="text" placeholder="Enter your District" required>
+            </div>
+            <div class="input-field">
+                <label>Block Number</label><br>
+                <input type="number" placeholder="Enter block number" required>
+            </div>
+            <div class="input-field">
+                <label>Ward Number</label><br>
+                <input type="number" placeholder="Enter Ward number" required>
+            </div>
+        </div>
+    </div>
+    <div class="family-details">
+        <span class="title">Family Details</span>
+        <div class="fields">
+            <div class="input-field">
+                <label>Father Name</label><br>
+                <input type="text" placeholder="Enter Father Name" required>
+            </div>
+            <div class="input-field">
+                <label>Mother Name</label><br>
+                <input type="text" placeholder="Enter Mother Name" required>
+            </div>
+            <div class="input-field">
+                <label>Grandfather Name</label><br>
+                <input type="text" placeholder="Enter Grandfather Name" required>
+            </div>
+            <div class="input-field">
+                <label>Spouse Name</label><br>
+                <input type="text" placeholder="Enter Spouse Name" required>
+            </div>
+            <div class="input-field">
+                <label>Father in Law</label><br>
+                <input type="text" placeholder="Enter Father in Law's Name" required>
+            </div>
+            <div class="input-field">
+                <label>Mother in Law</label><br>
+                <input type="text" placeholder="Enter Mother in Law's Name" required>
+            </div>
+        </div>
+          
+                <button class="nextbtn" onclick="validateAndNavigate('webpage.2.4.html')" type="button">
+                <span class="btntext">Submit</span>
+                <i class="uil uil-navigator"></i>
+            </div>
+            </button>
+            
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+</form>
+<p><a href="webpage.2.4.html"></a></p>
+
+
+  <script>
+    function validateAndNavigate() {
+        const addressFields = document.querySelectorAll('.address .input-field input');
+        const familyFields = document.querySelectorAll('.family-details .input-field input');
+
+        let isInputEmpty = false;
+
+        addressFields.forEach(input => {
+            if (input.value.trim() === "") {
+                isInputEmpty = true;
+                alert("Input field is empty");
+            }
+        });
+
+        familyFields.forEach(input => {
+            if (input.value.trim() === "") {
+                isInputEmpty = true;
+                alert("Input field is empty");
+            }
+        });
+
+        if (!isInputEmpty) {
+            // All input fields are filled, navigate to the next page
+            window.location.href ="webpage.2.4.html" ;
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(rgb(82, 125, 189),rgb(154, 96, 181));
+    
+}
+
+.container {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container .header {
+    position: relative;
+    font-size: 50px;
+    font-weight: 800;
+    color: #333;
+}
+
+.container form {
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    background-color: #fff;
+}
+
+.container form .form {
+    position: relative;
+    background-color: #fff;
+    transform: 0.3s ease;
+}
+
+.container form .details {
+    margin-top: 35px;
+}
+
+.container form .details.ID {
+    margin-top: 20px;
+}
+
+.container form .form.second {
+    margin-top: 100px;
+    padding-top: 300px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(100%);
+}
+
+.container .form .second .details address {
+    margin-top: 100px;
+    padding-top: 300px;
+}
+
+form.secactive .form.second {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0);
+}
+
+form.secactive .form.first {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(100%);
+}
+
+form.secActive .form.first {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.container form .title {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+}
+
+.container form .fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .details address .input-field {
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.input-field label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.input-field input {
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+    width: 250px;
+}
+
+.input-field input:is(:focus, :valid) {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+.input-field input[type="date"] {
+    color: #707070;
+}
+
+.input-field input[type="date"]:valid {
+    color: #333;
+}
+
+.container form button,
+.container form .btntext,
+.container form .backbtn.nextbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    max-width: 150px;
+    border: none;
+    outline: none;
+    color: #efe8e8;
+    border-radius: 8px;
+    margin: 10px;
+    background-color:  #265df2;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    
+}
+
+.container form button,
+.container form .backbtn {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+form button:hover {
+    background-color: #265df2;
+}
+
+form button i,
+form .backbtn i {
+    margin: 0 6px;
+}
+
+form .backbtn i {
+    transform: rotate(180deg);
+}
+
+form.buttons {
+    display: flex;
+    align-items: center;
+}
+
+form .buttons button,
+.backbtn {
+    margin-right: 14px;
+}
+
+.input-field {
+    display: inline-block;
+    padding: 10px;
+}
+
+.container.form .input-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.nextbtn,.backbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    max-width: 150px;
+    width: 100px;
+    border: 3px solid #fff;
+    outline: none;
+    color: #efe8e8;
+    border-radius: 8px;
+    margin: 5px;
+    /* margin-left: 280px; */
+    background:linear-gradient(rgb(82, 125, 189),rgb(154, 96, 181));
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+p a input[type="button"] {
+    font-size: 16px;
+    color: white;
+    background-color: blue;
+    padding: 10px 20px;
+    border: none; 
+    cursor: pointer;
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+  }

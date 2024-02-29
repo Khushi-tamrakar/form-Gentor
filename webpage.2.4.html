@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="webpage.2.4.css">
+    <title>transform form</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+    
+    <div class="container">
+        <input type="checkbox" id="flip">
+        <div class="cover">
+            <div class="front">
+                <img src="images/pexels-george-milton-7014337.jpg" alt=""> 
+                <div class="text"></div> 
+            </div>
+        </div>
+        <form action="#">
+            <div class="form-content">
+                <div class="login-form">
+                    <div class="title">Login</div>
+                    <div class="input-boxes">
+                        <div class="input-box">
+                            <i class="uil uil-envelope"></i>
+                            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"  placeholder="Enter your Email"/>
+                        </div>
+
+                        <div class="input-box">
+                            <i class="uil uil-lock"></i>
+                            <input type="password" placeholder="Enter your password" required>
+                        </div>
+
+                        <div class="text"><a href="#">Forget password!</a></div>
+
+                        <div class="button input-box">
+                            <i class="uil uil-envelope"></i>
+                            <input type="button" onclick="validateAndNavigate('webpage2.5.html')" value="Submit">
+                        </div>
+
+                        <div class="text login-text"> Don't have an account! <label for="flip">Signup now</label></div>
+                    </div>
+                </div>
+
+                <div class="signup-form">
+                    <div class="title">Signup-form</div>
+                    <div class="input-boxes">
+                        <div class="input-box">
+                            <i class="uil uil-user"></i>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-box">
+                            <i class="uil uil-envelope"></i>
+                            <input type="emailid" id="emailid" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-box">
+                            <i class="uil uil-lock"></i>
+                            <input type="password" placeholder="Enter your password" required>
+                        </div>
+
+                        <div class="text"><a href="#">Forget password!</a></div>
+
+                        <div class="button input-box">
+                            <input type="button" value="Submit" onclick="validateAndNavigatesignup('webpage2.5.html')">
+                        </div>
+
+                        <div class="text login-text"> Don't have an account! <a href="webpage2.5.html">Signup now</a></div> ```
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="webpage.2.4.js"></script>
+</body>
+</html>

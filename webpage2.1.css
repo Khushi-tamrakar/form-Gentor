@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,800;1,300;1,500&family=Roboto:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: "poppins",sans-serif;
+}
+
+body{
+     min-height: 80vh;
+    width: 100%;
+    background:linear-gradient(rgb(82, 125, 189),rgb(154, 96, 181));
+     display: flex;
+    align-items: center;
+    justify-content:center ;
+    margin: 0;
+    padding: 0;
+   font-size: 18px;
+   line-height: 1.6; 
+}
+.box{
+   margin: auto;
+    max-width: 1200px;
+    width: 80%;
+    background: #fff;
+    border-radius: 6px;
+   padding: 20px 60px 40px 40px;
+   box-shadow:0 5px 10px rgba( 0, 0, 0, 0.2) ;
+}
+ .box .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .box .content .left-sidde{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+ }
+ .box .content .left-sidde .details{
+margin: 14px;
+text-align: center;
+ }
+ .box .content .left-sidde::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    /* margin-left: -20; */
+     right:-15 ;
+    top: 50%;
+     transform: translateY(-50%); 
+    background:#afafb6 ;
+ }
+ .box .content .left-sidde .details i{
+font-size: 30px;
+color:#3e2093 ;
+margin-bottom: 10px;
+ }
+ .box .content .left-sidde .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+ }
+ .content .left-sidde .details .text-one,
+ .content .left-sidde .details .text-two{
+    font-size: 14px;
+    color: #afafb6 ;
+ }
+ .box .content .right-side{
+    width: 75%
+   margin-left 75px;
+    
+ }.box .right-side .topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    color: #3e2093;
+ }
+ .right-side .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 0 ;
+    justify-content: center;
+    
+ } 
+ .right-side .input-box .input,
+  .right-side .input-box textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    justify-content: center;
+     font: size 16px; 
+    background: #F0F1F8; 
+    border-radius: 6px;
+    /* padding: 0 15px; */
+    resize: none;
+ }
+ .right-side .message-box{
+    min-height: 110px; 
+    justify-content: center;
+ }
+ .right-side.button{
+    display: inline-block;
+    margin-top: 50px;
+ }
+ .right-side .button input[type="button"]{
+    color: #fff;
+    font-size:18px ;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px ;
+    background-color: #3e2093;
+    cursor: pointer;
+    transition: all 0.3s ease ;
+    margin-top: 25px;
+    margin-left: 240px;
+ }
+ .button input[type="button"]:hover{
+   background: #5029bc;
+ }
+ @media (max-width: 600px) {
+    .box {
+        width: 80%;
+        height: 150px;
+        padding: 15px;
+    }
+}
+.box .content{
+    flex-direction: column-reverse;
+}
+.box .content .left-sidde{
+    width:100% ;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.box .content .left-sidde::before{
+    display: none;
+
+}
+.box .content .right-sidde{
+    width: 100%;
+    margin-left: 0;
+}
+.input-box{
+   margin-top: 20px;
+   padding: 40px;  
+   text-align: center;
+   
+}
+#name-input-box{
+   background-color: ghostwhite;
+   border-radius: 7px;
+   width:500px;
+   height: 50px;
+}
+#email-input-box{
+   background-color: ghostwhite;
+border-radius: 7px;
+   width:500px;
+   height: 50px;
+}
+#message-box{
+   background-color: ghostwhite;
+border-radius: 7px;
+border: 2px solid black;
+   width:500px;
+   height: 50px;
+   margin-top: 50px;
+   resize: none;
+   
+}
+.message-box{
+text-align: center;
+}
+hr{
+   color: blue;
+}
+p a input[type="button"] {
+   font-size: 16px;
+   color: white;
+   background-color: blue;
+   padding: 10px 20px;
+   border: none; 
+   cursor: pointer;
+   display: block;
+   margin-top: 20px;
+   text-decoration: none;
+ }
